@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Noodeltop.views.login">
+  
+    <Grid BackgroundColor="#FFCCCC">
+        <StackLayout>
+            <Image Source="pp.jpg" WidthRequest="100" HeightRequest="90" Margin="0,40,0,0"/>
+        </StackLayout>
+        <StackLayout>
+                <Label x:Name="l_hn" Text="ร้านก๋วยเตี่ยวรสสเด็ด"  Margin="90,150,0,0" FontSize="25" TextColor="Black"/>
+                <Label x:Name="l_user" Text="ชื่อผู้ใช้" Margin="30,30,0,0" TextColor="Blue" FontSize="20"/>
+                <Entry x:Name="e_user" Placeholder="ชื่อผู้ใช้" Margin="30,0,20,0" />
+                <Label x:Name="l_password" Text="รหัสผ่าน" Margin="30,25,0,0" TextColor="Blue" FontSize="20"/>
+                <Entry x:Name="e_password" Placeholder="รหัสผ่าน" Margin="30,0,20,0" />
+                <Button x:Name="btn_login" Text="เข้าสู่ระบบ" Clicked="btn_login_clicked" Margin="50,30,50,0" BackgroundColor="#99FFCC" FontSize="20" />
+                <Button x:Name="btn_register" Text="สมัครสมาชิก" Clicked="btn_register_clicked" Margin="50,20,50,0" BackgroundColor="#99FFCC" FontSize="20" />
+            </StackLayout>
+        
+    </Grid>
+  
+</ContentPage>

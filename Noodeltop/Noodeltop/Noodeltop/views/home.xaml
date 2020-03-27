@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Noodeltop.views.home">
+    <Grid BackgroundColor="#FFCCCC">
+    
+        <StackLayout>
+            <Label x:Name="l_logoname" Text="ร้านก๋วยเตี่ยวรสสเด็ด" FontSize="35" TextColor="Black" HorizontalOptions="Center" Margin="0,45,0,0" />
+            <StackLayout>
+                <Image Source="tt.jpg" WidthRequest="170" HeightRequest="120" Margin="35,40,0,0" HorizontalOptions="StartAndExpand" />
+                <Image Source="ty.jpg" WidthRequest="165" HeightRequest="115" Margin="200,-126,0,50" HorizontalOptions="CenterAndExpand"  />
+                <Image Source="yan.jpg" WidthRequest="175" HeightRequest="110" Margin="0,-10,0,30" HorizontalOptions="Center"/>
+            </StackLayout>
+            <Button x:Name="btn_order" Clicked="btn_order_click" Text="สั่งซื้อ" FontSize="25" Margin="0,20,0,0" WidthRequest="120" HeightRequest="80" HorizontalOptions="Center" BackgroundColor="#00CC33" />
+            
+        </StackLayout>
+    </Grid>
+</ContentPage>

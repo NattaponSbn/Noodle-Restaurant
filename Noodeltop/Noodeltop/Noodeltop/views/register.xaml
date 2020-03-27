@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Noodeltop.views.register">
+    <Grid BackgroundColor="#FFCCCC">
+        <StackLayout>
+            <Label x:Name="l_here" Text="สมัครสมาชิก" HorizontalOptions="Center" FontSize="30" Margin="0,0,0,0" TextColor="Black" />
+            <Label x:Name="l_name" Text="ชื่อ-สกุล" Margin="30,20,0,0" TextColor="Blue" FontSize="20"/>
+            <Entry x:Name="e_name" Placeholder="ชื่อนามสกุล" Margin="30,0,20,0" />
+            <Label x:Name="l_em" Text="อีเมลล์" Margin="30,10,0,0" TextColor="Blue" FontSize="20"/>
+            <Entry x:Name="e_em" Placeholder="xxxx@gmai.com" Margin="30,0,20,0" />
+            <Label x:Name="l_uname" Text="ตั้งชื่อผู้ใช้" Margin="30,10,0,0" TextColor="Blue" FontSize="20"/>
+            <Entry x:Name="e_uname" Placeholder="ชื่อผู้ใช้" Margin="30,0,20,0" />
+            <Label x:Name="l_pass" Text="ตั้งรหังผ่าน" Margin="30,10,0,0" TextColor="Blue" FontSize="20"/>
+            <Entry x:Name="entry_pass" Placeholder="รหัสผ่านต้องมี 8 ตัวขึ้นไป" Margin="30,0,20,0" />
+            <Label x:Name="l_passag" Text="ยืนยันรหัสผ่านอีกครั้ง" Margin="30,10,0,0" TextColor="Blue" FontSize="20"/>
+            <Entry x:Name="entry_passag" Placeholder="รหัสผ่านต้องมี 8 ตัวขึ้นไป"  Margin="30,0,20,0" />
+            <Button x:Name="btn_re" Clicked="btnregister" Text="สมัครสมาชิก"  Margin="50,10,50,0" BackgroundColor="#99FFCC" FontSize="20" />
+
+        </StackLayout>
+    </Grid>
+</ContentPage>
